@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.topbar {
+  margin-bottom: 10px;
+}
+
+select, input {
+  padding: 8px;
+  margin: 5px 0;
+  width: 300px;
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border-bottom: 1px solid #334155;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:hover {
+  background: #1e293b;
+}
+
+.summary {
+  margin: 10px 0;
+  padding: 10px;
+  background: #1e293b;
+}

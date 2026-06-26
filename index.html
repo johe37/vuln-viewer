@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vuln Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Vulnerability Viewer</h1>
+
+    <div class="topbar">
+      <select id="reportSelect"></select>
+    </div>
+
+    <div id="summary" class="summary"></div>
+
+    <input id="search" placeholder="Search package or CVE..." />
+
+    <table>
+      <thead>
+        <tr>
+          <th>Severity</th>
+          <th>Package</th>
+          <th>Installed</th>
+          <th>Fixed</th>
+          <th>CVE</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
