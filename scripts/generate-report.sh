@@ -8,4 +8,7 @@ sudo trivy rootfs \
   --scanners vuln / \
   --skip-dirs /zfs_mirror01,/proc,/sys,/dev,/run \
   --format json \
-  -o reports/$FILENAME
+  -o "reports/$FILENAME"
+
+# Regenerate index.json with all report files
+ls reports/report-*.json 2>/dev/null | sed 's/.*\///' | jq -R -s 'split("\n") | map(select(length > 0))' > reports/index.json
