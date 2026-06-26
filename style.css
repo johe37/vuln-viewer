@@ -30,6 +30,7 @@ select, input {
 
 table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin-top: 15px;
 }
@@ -40,6 +41,21 @@ th, td {
   text-align: left;
 }
 
+th {
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  color: #60a5fa;
+}
+
+th:nth-child(1), td:nth-child(1) { width: 10%; }
+th:nth-child(2), td:nth-child(2) { width: 18%; }
+th:nth-child(3), td:nth-child(3) { width: 14%; }
+th:nth-child(4), td:nth-child(4) { width: 14%; }
+th:nth-child(5), td:nth-child(5) { width: 44%; }
+
 tr:hover {
   background: #1e293b;
 }
@@ -48,4 +64,30 @@ tr:hover {
   margin: 10px 0;
   padding: 10px;
   background: #1e293b;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+#pagination button {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#pagination button:hover {
+  background: #334155;
+}
+
+#pagination button.active {
+  background: #3b82f6;
+  border-color: #3b82f6;
 }
