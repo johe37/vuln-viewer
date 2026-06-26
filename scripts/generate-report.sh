@@ -1,5 +1,5 @@
 HOST="${1:-$(hostname)}"
-DATE="$(date +%F)"
+DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 FILENAME="report-${HOST}-${DATE}.json"
 
 mkdir -p reports/
