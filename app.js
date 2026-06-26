@@ -61,11 +61,13 @@ function renderSummary() {
   const stats = calculateStats(allRows);
 
   summary.innerHTML = `
-    <b>Total:</b> ${stats.total} |
-    <b>Critical:</b> ${stats.critical} |
-    <b>High:</b> ${stats.high} |
-    <b>Medium:</b> ${stats.medium} |
-    <b>Low:</b> ${stats.low}
+    <b>Report created:</b> ${currentReport.CreatedAt}</br>
+    <b>Trivy version used:</b> ${currentReport.Trivy.Version}</br>
+    <b>Critical:</b> ${stats.critical}</br>
+    <b>High:</b> ${stats.high}</br>
+    <b>Medium:</b> ${stats.medium}</br>
+    <b>Low:</b> ${stats.low}</br>
+    <b>Total:</b> ${stats.total}</br>
   `;
 }
 
